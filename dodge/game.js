@@ -33,19 +33,19 @@ function draw() {
     }
     background(backgroundImage);
     if (keyDown(RIGHT_ARROW) && player.position.x < (width-35)) {
-        player.position.x = player.position.x + 1.5;
+        player.position.x = player.position.x + 2;
     }
     
     if (keyDown(LEFT_ARROW) && player.position.x > 35) {
-        player.position.x = player.position.x - 1.5;
+        player.position.x = player.position.x - 2;
     }
     
     if (keyDown(UP_ARROW) && player.position.y > 30) {
-        player.position.y = player.position.y - 1.5;
+        player.position.y = player.position.y - 2;
     }
     
     if (keyDown(DOWN_ARROW) && player.position.y < (height-30)) {
-        player.position.y = player.position.y + 1.5;
+        player.position.y = player.position.y + 2;
     }
     enemy.position.y = enemy.position.y + 2;
     if (enemy.position.y > height) {
